@@ -8,4 +8,9 @@
         android:orderInCategory="100"
         android:title="@string/menuReport"
         app:showAsAction="never"/>
+    <item
+    android:id="@+id/donatePage"
+        android:orderInCategory="100"
+        android:title="@string/donatePage"
+        app:showAsAction="never"/>
 </menu>

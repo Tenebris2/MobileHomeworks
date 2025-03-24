@@ -15,5 +15,7 @@
     <string name="direct">Direct</string>
     <string name="amount">Amount</string>
     <string name="total">Total so Far</string>
+    <string name="reportTitle">Report</string>
     <string name="totalSoFar">$ Total</string>
+    <string name="donatePage">Donate</string>
 </resources>

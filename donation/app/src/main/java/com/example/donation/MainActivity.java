@@ -3,6 +3,7 @@ package com.example.donation;
 import static com.example.donation.R.id.*;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import com.example.donation.R; // ✅ correct
 import androidx.appcompat.app.AppCompatActivity;
@@ -62,9 +63,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.menuReport) {
-                Toast toast = Toast.makeText(this, "Report Selected",
-                        Toast.LENGTH_SHORT);
-                toast.show();
+            startActivity (new Intent(this, Report.class));
+        } else if (item.getItemId() == R.id.donatePage) {
+            startActivity (new Intent(this, MainActivity.class));
         }
         return super.onOptionsItemSelected(item);
     }
